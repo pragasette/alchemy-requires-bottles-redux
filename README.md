@@ -8,7 +8,6 @@ to have potion crafting consume empty bottles.
 - [The Elder Scrolls V: Skyrim][Skyrim].
 - [Dawnguard].
 - [Dragonborn].
-- [Unofficial Skyrim Legendary Edition Patch][USLEEP].
 - (optional) [xEdit].
 
 ## Installation
@@ -21,11 +20,10 @@ the same records.
 ## Features
 
 - Empty bottles can be purchased from various apothecaries.
-- [USLEEP] edits are forwarded.
+- [Unofficial Skyrim Legendary Edition Patch][USLEEP] edits are forwarded.
 
 ## TODO
 
-- Forward [USLEEP] edits but don't require it.
 - Make potion crafting require and consume empty bottles.
 - Make drinking potions return empty bottles.
 - Support [Campfire] and [Complete Alchemy and Cooking Overhaul][CACO].
