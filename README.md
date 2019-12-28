@@ -19,23 +19,24 @@ the same records.
 
 ## Features
 
+- At least an empty bottle is required to use alchemy labs and mortars from
+  [Campfire] and [Complete Alchemy and Cooking Overhaul][CACO].
 - Empty bottles can be purchased from various apothecaries.
 - [Unofficial Skyrim Legendary Edition Patch][USLEEP] edits are forwarded.
 
 ## TODO
 
-- Make potion crafting require and consume empty bottles.
+- Make potion crafting consume empty bottles.
 - Make drinking potions return empty bottles.
-- Support [Campfire] and [Complete Alchemy and Cooking Overhaul][CACO].
 - Provide an alternative esp plugin which doesn't require the DLCs.
 
 
 [Skyrim]: https://elderscrolls.bethesda.net/en/skyrim
 [Dawnguard]: https://store.steampowered.com/app/211720/
 [Dragonborn]: https://store.steampowered.com/app/226880/
-[USLEEP]: https://www.nexusmods.com/skyrim/mods/71214
 [xEdit]: https://tes5edit.github.io
-[Mod Organizer 2]: https://www.nexusmods.com/skyrimspecialedition/mods/6194
-[#1]: https://tes5edit.github.io/docs/4-conflict-detection-and-resolution.html#s_4-8
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
+[USLEEP]: https://www.nexusmods.com/skyrim/mods/71214
+[Mod Organizer 2]: https://www.nexusmods.com/skyrimspecialedition/mods/6194
+[#1]: https://tes5edit.github.io/docs/4-conflict-detection-and-resolution.html#s_4-8
