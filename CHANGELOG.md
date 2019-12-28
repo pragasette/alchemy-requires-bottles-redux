@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 ## [Unreleased]
 
 ### Added
+- Empty bottles leveled list to various vendors' chest.
 - This changelog.
 - Readme.
 
