@@ -7,9 +7,18 @@ MiscObject Property _p7ARB_EmptyBottle Auto
 
 Int MIN_BOTTLE_COUNT = 1
 
+Bool isMenuDisabled = False
+
 Event OnSit(ObjectReference ref)
 	If ref.HasKeyword(WICraftingAlchemy)
 		Self.ExitIfNotEnoughBottles()
+	EndIf
+EndEvent
+
+Event OnGetUp(ObjectReference ref)
+	If isMenuDisabled
+		Debug.ToggleMenus()
+		isMenuDisabled = False
 	EndIf
 EndEvent
 
@@ -19,7 +28,10 @@ Function ExitIfNotEnoughBottles()
 	If playerRef.GetItemCount(_p7ARB_EmptyBottle) < MIN_BOTTLE_COUNT
 		_p7ARB_ExitMessage.Show()
 		playerRef.PlayIdle(IdleAlchemyExit)
-		; exit immediately
-		playerRef.MoveTo(playerRef)
+		; wait until the message dialog is closed
+		Utility.Wait(0.1)
+		; disallow interactions with the crafting menu
+		Debug.ToggleMenus()
+		isMenuDisabled = True
 	EndIf
 EndFunction
