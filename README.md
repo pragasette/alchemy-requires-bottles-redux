@@ -1,7 +1,8 @@
-# Alchemy Requires Bottles
+# Alchemy Requires Bottles Redux
 
-_Alchemy Requires Bottles_ is a mod for [The Elder Scrolls V: Skyrim][Skyrim]
-to have potion crafting consume empty bottles.
+_Alchemy Requires Bottles Redux_ is a mod for
+[The Elder Scrolls V: Skyrim][Skyrim] to have potion crafting consume empty
+bottles.
 
 ## Requirements
 
