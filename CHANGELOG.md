@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ### Added
 - Empty bottles leveled list to various vendors' chest.
-- Potion crafting requires empty bottles.
+- Potion crafting requires and consumes empty bottles.
 - This changelog.
 - Readme.
 

@@ -5,7 +5,7 @@ Keyword Property WICraftingAlchemy Auto
 Message Property _p7ARBR_ExitMessage Auto
 MiscObject Property _p7ARBR_EmptyBottle Auto
 
-Int MIN_BOTTLE_COUNT = 1
+Int REMOVED_BOTTLE_COUNT = 1
 
 Bool isMenuDisabled = False
 
@@ -25,7 +25,7 @@ EndEvent
 Function ExitIfNotEnoughBottles()
 	Actor playerRef = Self.GetReference() as Actor
 
-	If playerRef.GetItemCount(_p7ARBR_EmptyBottle) < MIN_BOTTLE_COUNT
+	If playerRef.GetItemCount(_p7ARBR_EmptyBottle) < REMOVED_BOTTLE_COUNT
 		_p7ARBR_ExitMessage.Show()
 		playerRef.PlayIdle(IdleAlchemyExit)
 		; wait until the message dialog is closed
@@ -34,4 +34,12 @@ Function ExitIfNotEnoughBottles()
 		Debug.ToggleMenus()
 		isMenuDisabled = True
 	EndIf
+EndFunction
+
+Function HandleCraftItem()
+	; this function is invoked by a fragment in _p7ARBR_CraftQuest, see that
+	; script for more details about the implementation
+	Actor playerRef = Self.GetReference() as Actor
+	playerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
+	Self.ExitIfNotEnoughBottles()
 EndFunction

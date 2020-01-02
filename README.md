@@ -22,12 +22,12 @@ the same records.
 
 - At least an empty bottle is required to use alchemy labs and mortars from
   [Campfire] and [Complete Alchemy and Cooking Overhaul][CACO].
+- An empty bottle is consumed when crafting a potion or poison.
 - Empty bottles can be purchased from various apothecaries.
 - [Unofficial Skyrim Legendary Edition Patch][USLEEP] edits are forwarded.
 
 ## TODO
 
-- Make potion crafting consume empty bottles.
 - Make drinking potions return empty bottles.
 - Provide an alternative esp plugin which doesn't require the DLCs.
 
