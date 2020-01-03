@@ -24,11 +24,12 @@ the same records.
   [Campfire] and [Complete Alchemy and Cooking Overhaul][CACO].
 - An empty bottle is consumed when crafting a potion or poison.
 - Empty bottles can be purchased from various apothecaries.
+- An empty bottle is returned when using a potion.
 - [Unofficial Skyrim Legendary Edition Patch][USLEEP] edits are forwarded.
 
 ## TODO
 
-- Make drinking potions return empty bottles.
+- Make drinking poisons return empty bottles.
 - Provide an alternative esp plugin which doesn't require the DLCs.
 
 

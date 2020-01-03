@@ -1,6 +1,7 @@
 Scriptname _p7ARBR_PlayerAlias extends ReferenceAlias
 
 Idle Property IdleAlchemyExit Auto
+Keyword Property VendorItemPotion Auto
 Keyword Property WICraftingAlchemy Auto
 Message Property _p7ARBR_ExitMessage Auto
 MiscObject Property _p7ARBR_EmptyBottle Auto
@@ -19,6 +20,13 @@ Event OnGetUp(ObjectReference ref)
 	If isMenuDisabled
 		Debug.ToggleMenus()
 		isMenuDisabled = False
+	EndIf
+EndEvent
+
+Event OnObjectEquipped(Form object, ObjectReference ref)
+	; this event is not fired when using a poison
+	If object.HasKeyword(VendorItemPotion)
+		(Self.GetReference() as Actor).AddItem(_p7ARBR_EmptyBottle, 1)
 	EndIf
 EndEvent
 
