@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
-## [Unreleased]
+## 0.1.0 - 2020-01-03
 
 ### Added
 - Empty bottles leveled list to various vendors' chest.
