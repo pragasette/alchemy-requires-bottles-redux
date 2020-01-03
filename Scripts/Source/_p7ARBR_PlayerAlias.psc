@@ -32,8 +32,11 @@ Event OnGetUp(ObjectReference ref)
 EndEvent
 
 Event OnObjectEquipped(Form object, ObjectReference ref)
-	; this event is not fired when using a poison
-	If object.HasKeyword(VendorItemPotion)
+	; this event is not fired when using a poison;
+	; only consider actual ingestibles, in order to exclude false positives
+	; such as mortars from Campfire and CACO and hopefully other items labeled
+	; as potions
+	If (object as Potion) && object.HasKeyword(VendorItemPotion)
 		(Self.GetReference() as Actor).AddItem(_p7ARBR_EmptyBottle, 1)
 	EndIf
 EndEvent
