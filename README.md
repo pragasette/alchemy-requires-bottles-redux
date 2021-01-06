@@ -32,9 +32,9 @@ the same records.
 - Provide an alternative esp plugin which doesn't require the DLCs.
 
 
-[Skyrim]: https://elderscrolls.bethesda.net/en/skyrim
-[Dawnguard]: https://store.steampowered.com/app/211720/
-[Dragonborn]: https://store.steampowered.com/app/226880/
+[Skyrim]: https://store.steampowered.com/app/72850
+[Dawnguard]: https://store.steampowered.com/app/211720
+[Dragonborn]: https://store.steampowered.com/app/226880
 [xEdit]: https://tes5edit.github.io
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
