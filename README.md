@@ -27,6 +27,10 @@ bottles.
 case another mod is editing the same records: see
 [xEdit Conflict Detection and Resolution][#1] and [Patching][#2] to know more.
 
+## Alternatives
+
+- [Alchemy Requires Bottles].
+
 ## TODO
 
 - Provide an alternative esp plugin which doesn't require the DLCs.
@@ -40,5 +44,6 @@ case another mod is editing the same records: see
 [USLEEP]: https://www.nexusmods.com/skyrim/mods/71214
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
+[Alchemy Requires Bottles]: https://www.nexusmods.com/skyrim/mods/52311
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching

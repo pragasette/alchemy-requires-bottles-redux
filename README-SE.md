@@ -25,6 +25,10 @@ potion crafting consume empty bottles.
 case another mod is editing the same records: see
 [xEdit Conflict Detection and Resolution][#1] and [Patching][#2] to know more.
 
+## Alternatives
+
+- [Reality Alchemy].
+
 
 [Skyrim Special Edition]: https://store.steampowered.com/app/489830
 [Mod Organizer 2]: https://github.com/ModOrganizer2/modorganizer
@@ -32,5 +36,6 @@ case another mod is editing the same records: see
 [USSEP]: https://www.nexusmods.com/skyrimspecialedition/mods/266
 [Campfire]: https://www.nexusmods.com/skyrimspecialedition/mods/667
 [CACO]: https://www.nexusmods.com/skyrimspecialedition/mods/19924
+[Reality Alchemy]: https://www.nexusmods.com/skyrimspecialedition/mods/19269
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
