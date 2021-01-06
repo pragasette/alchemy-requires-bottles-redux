@@ -16,11 +16,11 @@ The format is based on [Keep a Changelog], and this project adheres to
 ## 0.1.0 - 2020-01-03
 
 ### Added
-- Empty bottles leveled list to various vendors' chest.
-- Potion crafting requires and consumes empty bottles.
-- Using potions and poisons return empty bottles.
 - This changelog.
 - Readme.
+- Potion crafting requires and consumes empty bottles.
+- Using potions and poisons gives back empty bottles.
+- Apothecaries sell empty bottles.
 
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
