@@ -1,0 +1,38 @@
+[center][font=bebas_neuebook][size=5]Classic Edition﻿ • [url=https://www.nexusmods.com/skyrimspecialedition/mods/44053]Special Edition[/url] • [url=https://github.com/pragasette/alchemy-requires-bottles-redux]GitHub﻿[/url]﻿[/size][/font][/center]
+
+
+[heading]Features[/heading]
+[list]
+[*] Require and consume an [i]Empty Potion Bottle[/i] to craft a potion or a poison.
+[*] Purchase [i]Empty Potion Bottle[/i] from apothecaries.
+[*] Get back an [i]Empty Potion Bottle[/i] when consuming a potion or a poison.
+[*] Forward changes from [url=https://www.nexusmods.com/skyrim/mods/71214]Unofficial Skyrim Legendary Edition Patch[/url].
+[*] Support [i]Mortar and Pestle[/i] from [url=https://www.nexusmods.com/skyrim/mods/64798]Campfire[/url] and [url=https://www.nexusmods.com/skyrim/mods/69306]Complete Alchemy and Cooking Overhaul[/url].
+[/list]
+
+[heading]Requirements[/heading]
+[list]
+[*] [url=https://store.steampowered.com/app/211720]Dawnguard[/url].
+[*] [url=https://store.steampowered.com/app/226880]Dragonborn[/url].
+[*] [url=https://www.nexusmods.com/skyrim/mods/25859]TES5Edit[/url].
+[/list]
+
+[heading]Installation[/heading]
+[list]
+[*] Use your mod manager of choice, [url=https://www.nexusmods.com/skyrimspecialedition/mods/6194]Mod Organizer 2[/url] is recommended.
+[*] Use [url=https://www.nexusmods.com/skyrim/mods/25859]TES5Edit[/url] to ensure changes applied to merchant chests are preserved, in case another mod is editing the same records: see [url=https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html]xEdit Conflict Detection and Resolution[/url] and [url=https://www.reddit.com/r/skyrimmods/wiki/patching]Patching[/url] to know more.
+[/list]
+
+[heading]Updating[/heading]
+It is safe to update from version [b]0.1.0[/b], [url=https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/]previously available[/url] on [url=https://www.reddit.com/r/skyrimmods/]r/skyrimmods[/url].
+&#8203;
+
+[heading]Alternatives[/heading]
+[list]
+[*] [url=https://www.nexusmods.com/skyrim/mods/52311]Alchemy Requires Bottles[/url].
+[/list]
+
+[heading]TODO[/heading]
+[list]
+[*] Provide an alternative esp plugin which doesn't require the DLCs.
+[/list]

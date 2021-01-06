@@ -1,0 +1,1 @@
+Require and consume empty bottles to craft potions and poisons.
