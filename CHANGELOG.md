@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog], and this project adheres to
 ### Added
 - License.
 
+### Fixed
+- Plugin masters sorting.
+
 ## 0.1.0 - 2020-01-03
 
 ### Added
