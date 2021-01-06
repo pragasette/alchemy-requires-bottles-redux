@@ -18,14 +18,14 @@ bottles.
 - [The Elder Scrolls V: Skyrim][Skyrim].
 - [Dawnguard].
 - [Dragonborn].
-- (optional) [xEdit].
+- [TES5Edit].
 
 ## Installation
 
 - Use your mod manager of choice, [Mod Organizer 2] is recommended.
-- It is recommended to create a [merged patch][#1] using [xEdit] to ensure
-changes applied to vendor chests are preserved, in case another mod is editing
-the same records.
+- Use [TES5Edit] to ensure changes applied to merchant chests are preserved, in
+case another mod is editing the same records: see
+[xEdit Conflict Detection and Resolution][#1] and [Patching][#2] to know more.
 
 ## TODO
 
@@ -35,9 +35,10 @@ the same records.
 [Skyrim]: https://store.steampowered.com/app/72850
 [Dawnguard]: https://store.steampowered.com/app/211720
 [Dragonborn]: https://store.steampowered.com/app/226880
-[Mod Organizer 2]: https://www.nexusmods.com/skyrimspecialedition/mods/6194
-[xEdit]: https://tes5edit.github.io
+[Mod Organizer 2]: https://github.com/ModOrganizer2/modorganizer
+[TES5Edit]: https://tes5edit.github.io
 [USLEEP]: https://www.nexusmods.com/skyrim/mods/71214
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
-[#1]: https://tes5edit.github.io/docs/4-conflict-detection-and-resolution.html#s_4-8
+[#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
+[#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
