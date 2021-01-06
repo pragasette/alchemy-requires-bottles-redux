@@ -4,7 +4,7 @@
 [heading]Features[/heading]
 [list]
 [*] Require and consume an [i]Empty Potion Bottle[/i] to craft a potion or a poison.
-[*] Purchase [i]Empty Potion Bottle[/i] from apothecaries.
+[*] Purchase [i]Empty Potion Bottles[/i] from apothecaries.
 [*] Get back an [i]Empty Potion Bottle[/i] when consuming a potion or a poison.
 [*] Forward changes from [url=https://www.nexusmods.com/skyrim/mods/71214]Unofficial Skyrim Legendary Edition Patch[/url].
 [*] Support [i]Mortar and Pestle[/i] from [url=https://www.nexusmods.com/skyrim/mods/64798]Campfire[/url] and [url=https://www.nexusmods.com/skyrim/mods/69306]Complete Alchemy and Cooking Overhaul[/url].
