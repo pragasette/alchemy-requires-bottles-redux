@@ -12,6 +12,7 @@ potion crafting consume empty bottles.
 - Forward changes from [Unofficial Skyrim Special Edition Patch][USSEP].
 - Support _Mortar and Pestle_ from [Campfire] and
 [Complete Alchemy and Cooking Overhaul][CACO].
+- The plugin is flagged as ESL and doesn't count against the ESP limit.
 
 ## Requirements
 

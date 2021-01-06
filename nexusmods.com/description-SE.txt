@@ -8,6 +8,7 @@
 [*] Get back an [i]Empty Potion Bottle[/i] when consuming a potion or a poison.
 [*] Forward changes from [url=https://www.nexusmods.com/skyrimspecialedition/mods/266]Unofficial Skyrim Special Edition Patch[/url].
 [*] Support [i]Mortar and Pestle[/i] from [url=https://www.nexusmods.com/skyrimspecialedition/mods/667]Campfire[/url] and [url=https://www.nexusmods.com/skyrimspecialedition/mods/19924]Complete Alchemy and Cooking Overhaul[/url].
+[*] The plugin is flagged as ESL and doesn't count against the ESP limit.
 [/list]
 
 [heading]Requirements[/heading]
