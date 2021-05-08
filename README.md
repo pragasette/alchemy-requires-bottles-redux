@@ -29,8 +29,8 @@ case another mod is editing the same records: see
 
 ## Updating
 
-It is safe to update from version **0.1.0**, [previously available][#3] on
-[r/skyrimmods].
+It is safe to update from version **0.1.0**, previously
+[available on r/skyrimmods][#3].
 
 ## Known Issues
 
@@ -54,7 +54,6 @@ It is safe to update from version **0.1.0**, [previously available][#3] on
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
 [Alchemy Requires Bottles]: https://www.nexusmods.com/skyrim/mods/52311
-[r/skyrimmods]: https://www.reddit.com/r/skyrimmods/
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
 [#3]: https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/
