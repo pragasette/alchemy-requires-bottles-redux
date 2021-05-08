@@ -12,9 +12,9 @@
 
 [heading]Requirements[/heading]
 [list]
-[*] [url=https://store.steampowered.com/app/211720]Dawnguard[/url].
-[*] [url=https://store.steampowered.com/app/226880]Dragonborn[/url].
-[*] [url=https://www.nexusmods.com/skyrim/mods/25859]TES5Edit[/url].
+[*] [url=https://store.steampowered.com/app/211720]Dawnguard[/url]
+[*] [url=https://store.steampowered.com/app/226880]Dragonborn[/url]
+[*] [url=https://www.nexusmods.com/skyrim/mods/25859]TES5Edit[/url]
 [/list]
 
 [heading]Installation[/heading]
@@ -34,7 +34,7 @@ It is safe to update from version [b]0.1.0[/b], [url=https://www.reddit.com/r/sk
 
 [heading]Alternatives[/heading]
 [list]
-[*] [url=https://www.nexusmods.com/skyrim/mods/52311]Alchemy Requires Bottles[/url].
+[*] [url=https://www.nexusmods.com/skyrim/mods/52311]Alchemy Requires Bottles[/url]
 [/list]
 
 [heading]TODO[/heading]

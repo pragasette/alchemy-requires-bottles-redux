@@ -15,10 +15,10 @@ bottles.
 
 ## Requirements
 
-- [The Elder Scrolls V: Skyrim][Skyrim].
-- [Dawnguard].
-- [Dragonborn].
-- [TES5Edit].
+- [The Elder Scrolls V: Skyrim][Skyrim]
+- [Dawnguard]
+- [Dragonborn]
+- [TES5Edit]
 
 ## Installation
 
@@ -38,7 +38,7 @@ It is safe to update from version **0.1.0**, [previously available][#3] on
 
 ## Alternatives
 
-- [Alchemy Requires Bottles].
+- [Alchemy Requires Bottles]
 
 ## TODO
 

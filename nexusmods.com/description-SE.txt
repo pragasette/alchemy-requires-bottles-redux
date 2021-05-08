@@ -13,7 +13,7 @@
 
 [heading]Requirements[/heading]
 [list]
-[*] [url=https://www.nexusmods.com/skyrimspecialedition/mods/164]SSEEdit[/url].
+[*] [url=https://www.nexusmods.com/skyrimspecialedition/mods/164]SSEEdit[/url]
 [/list]
 
 [heading]Installation[/heading]
@@ -33,5 +33,5 @@ It is safe to update from version [b]0.1.0[/b], [url=https://www.reddit.com/r/sk
 
 [heading]Alternatives[/heading]
 [list]
-[*] [url=https://www.nexusmods.com/skyrimspecialedition/mods/19269]Reality Alchemy[/url].
+[*] [url=https://www.nexusmods.com/skyrimspecialedition/mods/19269]Reality Alchemy[/url]
 [/list]

@@ -16,8 +16,8 @@ potion crafting consume empty bottles.
 
 ## Requirements
 
-- [The Elder Scrolls V: Skyrim Special Edition][Skyrim Special Edition].
-- [SSEEdit].
+- [The Elder Scrolls V: Skyrim Special Edition][Skyrim Special Edition]
+- [SSEEdit]
 
 ## Installation
 
@@ -37,7 +37,7 @@ It is safe to update from version **0.1.0**, [previously available][#3] on
 
 ## Alternatives
 
-- [Reality Alchemy].
+- [Reality Alchemy]
 
 
 [Skyrim Special Edition]: https://store.steampowered.com/app/489830
