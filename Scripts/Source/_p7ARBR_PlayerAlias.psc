@@ -8,6 +8,7 @@ Keyword Property VendorItemPotion Auto
 Keyword Property WICraftingAlchemy Auto
 Message Property _p7ARBR_ExitMessage Auto
 MiscObject Property _p7ARBR_EmptyBottle Auto
+Quest Property UpdateQuest Auto
 
 Int REMOVED_BOTTLE_COUNT = 1
 String POISONS_USED_STAT = "Poisons Used"
@@ -18,6 +19,12 @@ Int poisonCount
 Event OnInit()
 	Self.AddInventoryEventFilter(_p7ARBR_PoisonList)
 	poisonCount = Game.QueryStat(POISONS_USED_STAT)
+EndEvent
+
+Event OnPlayerLoadGame()
+	If UpdateQuest.GetCurrentStageID() < 1
+		UpdateQuest.SetCurrentStageID(1)
+	EndIf
 EndEvent
 
 Event OnSit(ObjectReference ref)
@@ -66,6 +73,24 @@ EndFunction
 
 Function HandleCraftItem()
 	; Unused since version 1.0.1, left to prevent errors in mid-game updates
+EndFunction
+
+Function Update1()
+	If SKSE.GetVersion() > 0
+		Int count = PlayerRef.GetNumItems()
+		Int i = 0
+
+		While i < count
+			Form item = PlayerRef.GetNthForm(i)
+
+			If item.HasKeyword(VendorItemPoison) && !_p7ARBR_PoisonList.HasForm(item)
+				Debug.Trace("[Alchemy Requires Bottles Redux] Adding form to _p7ARBR_PoisonList: " + item)
+				_p7ARBR_PoisonList.AddForm(item)
+			EndIf
+
+			i += 1
+		EndWhile
+	EndIf
 EndFunction
 
 State Crafting
