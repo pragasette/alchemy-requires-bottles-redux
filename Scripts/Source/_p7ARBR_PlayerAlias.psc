@@ -1,5 +1,6 @@
 Scriptname _p7ARBR_PlayerAlias extends ReferenceAlias
 
+Actor Property PlayerRef Auto
 FormList Property _p7ARBR_PoisonList Auto
 Idle Property IdleAlchemyExit Auto
 Keyword Property VendorItemPotion Auto
@@ -37,7 +38,7 @@ Event OnObjectEquipped(Form object, ObjectReference ref)
 	; such as mortars from Campfire and CACO and hopefully other items labeled
 	; as potions
 	If (object as Potion) && object.HasKeyword(VendorItemPotion)
-		(Self.GetReference() as Actor).AddItem(_p7ARBR_EmptyBottle, 1)
+		PlayerRef.AddItem(_p7ARBR_EmptyBottle, 1)
 	EndIf
 EndEvent
 
@@ -49,15 +50,13 @@ Event OnItemRemoved(Form item, Int count, ObjectReference itemRef, ObjectReferen
 	Int newCount = Game.QueryStat(POISONS_USED_STAT)
 
 	If newCount > poisonCount
-		(Self.GetReference() as Actor).AddItem(_p7ARBR_EmptyBottle, 1)
+		PlayerRef.AddItem(_p7ARBR_EmptyBottle, 1)
 		poisonCount = newCount
 	EndIf
 EndEvent
 
 Function ExitIfNotEnoughBottles()
-	Actor playerRef = Self.GetReference() as Actor
-
-	If playerRef.GetItemCount(_p7ARBR_EmptyBottle) < REMOVED_BOTTLE_COUNT
+	If PlayerRef.GetItemCount(_p7ARBR_EmptyBottle) < REMOVED_BOTTLE_COUNT
 		_p7ARBR_ExitMessage.Show()
 		playerRef.PlayIdle(IdleAlchemyExit)
 		; wait until the message dialog is closed
@@ -71,7 +70,6 @@ EndFunction
 Function HandleCraftItem()
 	; this function is invoked by a fragment in _p7ARBR_CraftQuest, see that
 	; script for more details about the implementation
-	Actor playerRef = Self.GetReference() as Actor
-	playerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
+	PlayerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
 	Self.ExitIfNotEnoughBottles()
 EndFunction
