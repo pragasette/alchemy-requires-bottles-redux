@@ -32,10 +32,6 @@ case another mod is editing the same records: see
 It is safe to update from version **0.1.0**, previously
 [available on r/skyrimmods][#3].
 
-## Known Issues
-
-- Using crafted poisons doesn't give _Empty Potion Bottles_.
-
 ## Alternatives
 
 - [Alchemy Requires Bottles]

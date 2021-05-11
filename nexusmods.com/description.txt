@@ -27,11 +27,6 @@
 It is safe to update from version [b]0.1.0[/b], previously [url=https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/]available on r/skyrimmods[/url].
 &#8203;
 
-[heading]Known Issues[/heading]
-[list]
-[*] Using crafted poisons doesn't give [i]Empty Potion Bottles[/i].
-[/list]
-
 [heading]Alternatives[/heading]
 [list]
 [*] [url=https://www.nexusmods.com/skyrim/mods/52311]Alchemy Requires Bottles[/url]

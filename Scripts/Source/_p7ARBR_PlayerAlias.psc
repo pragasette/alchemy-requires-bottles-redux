@@ -3,6 +3,7 @@ Scriptname _p7ARBR_PlayerAlias extends ReferenceAlias
 Actor Property PlayerRef Auto
 FormList Property _p7ARBR_PoisonList Auto
 Idle Property IdleAlchemyExit Auto
+Keyword Property VendorItemPoison Auto
 Keyword Property VendorItemPotion Auto
 Keyword Property WICraftingAlchemy Auto
 Message Property _p7ARBR_ExitMessage Auto
@@ -21,14 +22,8 @@ EndEvent
 
 Event OnSit(ObjectReference ref)
 	If ref.HasKeyword(WICraftingAlchemy)
+		Self.GotoState("Crafting")
 		Self.ExitIfNotEnoughBottles()
-	EndIf
-EndEvent
-
-Event OnGetUp(ObjectReference ref)
-	If isMenuDisabled
-		Debug.ToggleMenus()
-		isMenuDisabled = False
 	EndIf
 EndEvent
 
@@ -52,13 +47,15 @@ Event OnItemRemoved(Form item, Int count, ObjectReference itemRef, ObjectReferen
 	If newCount > poisonCount
 		PlayerRef.AddItem(_p7ARBR_EmptyBottle, 1)
 		poisonCount = newCount
+		Debug.Trace("[Alchemy Requires Bottles Redux] Trying to remove form from _p7ARBR_PoisonList: " + item)
+		_p7ARBR_PoisonList.RemoveAddedForm(item)
 	EndIf
 EndEvent
 
 Function ExitIfNotEnoughBottles()
 	If PlayerRef.GetItemCount(_p7ARBR_EmptyBottle) < REMOVED_BOTTLE_COUNT
 		_p7ARBR_ExitMessage.Show()
-		playerRef.PlayIdle(IdleAlchemyExit)
+		PlayerRef.PlayIdle(IdleAlchemyExit)
 		; wait until the message dialog is closed
 		Utility.Wait(0.1)
 		; disallow interactions with the crafting menu
@@ -68,8 +65,37 @@ Function ExitIfNotEnoughBottles()
 EndFunction
 
 Function HandleCraftItem()
-	; this function is invoked by a fragment in _p7ARBR_CraftQuest, see that
-	; script for more details about the implementation
-	PlayerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
-	Self.ExitIfNotEnoughBottles()
+	; Unused since version 1.0.1, left to prevent errors in mid-game updates
 EndFunction
+
+State Crafting
+	Event OnBeginState()
+		Self.RemoveInventoryEventFilter(_p7ARBR_PoisonList)
+	EndEvent
+
+	Event OnEndState()
+		Self.AddInventoryEventFilter(_p7ARBR_PoisonList)
+	EndEvent
+
+	Event OnGetUp(ObjectReference ref)
+		If isMenuDisabled
+			Debug.ToggleMenus()
+			isMenuDisabled = False
+		EndIf
+
+		Self.GotoState("")
+	EndEvent
+
+	Event OnItemAdded(Form item, Int count, ObjectReference itemRef, ObjectReference containerRef)
+		PlayerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
+		Self.ExitIfNotEnoughBottles()
+
+		If item.HasKeyword(Self.VendorItemPoison) && !_p7ARBR_PoisonList.HasForm(item)
+			Debug.Trace("[Alchemy Requires Bottles Redux] Adding form to _p7ARBR_PoisonList: " + item)
+			_p7ARBR_PoisonList.AddForm(item)
+		EndIf
+	EndEvent
+
+	Event OnItemRemoved(Form item, Int count, ObjectReference itemRef, ObjectReference containerRef)
+	EndEvent
+EndState
