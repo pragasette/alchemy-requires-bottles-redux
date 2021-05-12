@@ -12,13 +12,19 @@ Quest Property UpdateQuest Auto
 
 Int REMOVED_BOTTLE_COUNT = 1
 String POISONS_USED_STAT = "Poisons Used"
+String POISONS_MIXED_STAT = "Poisons Mixed"
+String POTIONS_MIXED_STAT = "Potions Mixed"
 
 Bool isMenuDisabled = False
 Int poisonCount
+Int poisonMixedCount
+Int potionMixedCount
 
 Event OnInit()
 	Self.AddInventoryEventFilter(_p7ARBR_PoisonList)
 	poisonCount = Game.QueryStat(POISONS_USED_STAT)
+	poisonMixedCount = Game.QueryStat(POISONS_MIXED_STAT)
+	potionMixedCount = Game.QueryStat(POTIONS_MIXED_STAT)
 EndEvent
 
 Event OnPlayerLoadGame()
@@ -79,6 +85,9 @@ Function HandleCraftItem()
 EndFunction
 
 Function Update1()
+	poisonMixedCount = Game.QueryStat(POISONS_MIXED_STAT)
+	potionMixedCount = Game.QueryStat(POTIONS_MIXED_STAT)
+
 	If SKSE.GetVersion() > 0
 		Int count = PlayerRef.GetNumItems()
 		Int i = 0
@@ -115,12 +124,26 @@ State Crafting
 	EndEvent
 
 	Event OnItemAdded(Form item, Int count, ObjectReference itemRef, ObjectReference containerRef)
-		PlayerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
-		Self.ExitIfNotEnoughBottles()
+		Int newPotionCount = Game.QueryStat(POTIONS_MIXED_STAT)
+		Int newPoisonCount = Game.QueryStat(POISONS_MIXED_STAT)
+		Bool isCrafted = False
 
-		If item.HasKeyword(Self.VendorItemPoison) && !_p7ARBR_PoisonList.HasForm(item)
-			Debug.Trace("[Alchemy Requires Bottles Redux] Adding form to _p7ARBR_PoisonList: " + item)
-			_p7ARBR_PoisonList.AddForm(item)
+		If newPotionCount > potionMixedCount
+			potionMixedCount = newPotionCount
+			isCrafted = True
+		ElseIf newPoisonCount > poisonMixedCount
+			poisonMixedCount = newPoisonCount
+			isCrafted = True
+		EndIf
+
+		If isCrafted
+			PlayerRef.RemoveItem(_p7ARBR_EmptyBottle, REMOVED_BOTTLE_COUNT)
+			Self.ExitIfNotEnoughBottles()
+
+			If item.HasKeyword(Self.VendorItemPoison) && !_p7ARBR_PoisonList.HasForm(item)
+				Debug.Trace("[Alchemy Requires Bottles Redux] Adding form to _p7ARBR_PoisonList: " + item)
+				_p7ARBR_PoisonList.AddForm(item)
+			EndIf
 		EndIf
 	EndEvent
 
