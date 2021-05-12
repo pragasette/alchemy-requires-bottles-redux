@@ -40,6 +40,10 @@ It is safe to update from version **0.1.0**, previously
 
 ## TODO
 
+- Allow easy customization of consumed items via plugin override.
+- Consume bottles to extract potions and poisons from creatures, supporting
+  [Hunterborn].
+- Add bottle crafting and smelting recipes.
 - Provide an alternative esp plugin which doesn't require the DLCs.
 
 
@@ -56,3 +60,4 @@ It is safe to update from version **0.1.0**, previously
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
 [#3]: https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/
+[Hunterborn]: https://www.nexusmods.com/skyrim/mods/33201

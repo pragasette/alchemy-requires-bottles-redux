@@ -30,3 +30,10 @@ It is safe to update from version [b]0.1.0[/b], previously [url=https://www.redd
 [list]
 [*] [url=https://www.nexusmods.com/skyrimspecialedition/mods/19269]Reality Alchemy[/url]
 [/list]
+
+[heading]TODO[/heading]
+[list]
+[*] Allow easy customization of consumed items via plugin override.
+[*] Consume bottles to extract potions and poisons from creatures, supporting [url=https://www.nexusmods.com/skyrimspecialedition/mods/7900]Hunterborn[/url].
+[*] Add bottle crafting and smelting recipes, see [url=https://www.nexusmods.com/skyrimspecialedition/mods/45539]Crafting Empty Bottle[/url].
+[/list]
