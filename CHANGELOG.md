@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 ### Fixed
 - Plugin masters sorting.
 
-## 0.1.0 - 2020-01-03
+## [0.1.0] - 2020-01-03
 
 ### Added
 - This changelog.
@@ -31,4 +31,5 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[1.0.0]: https://github.com/pragasette/alchemy-requires-bottles-redux/releases/tag/v1.0.0
+[1.0.0]: https://github.com/pragasette/alchemy-requires-bottles-redux/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/pragasette/alchemy-requires-bottles-redux/releases/tag/v0.1.0
