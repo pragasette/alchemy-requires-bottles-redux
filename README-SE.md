@@ -42,6 +42,7 @@ It is safe to update from version **0.1.0**, previously
 - Consume bottles to extract potions and poisons from creatures, supporting
   [Hunterborn].
 - Add bottle crafting and smelting recipes, see [Crafting Empty Bottle].
+- Optionally add bottles to leveled lists via script injection.
 
 
 [Skyrim Special Edition]: https://store.steampowered.com/app/489830

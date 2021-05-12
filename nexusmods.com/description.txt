@@ -38,5 +38,6 @@ It is safe to update from version [b]0.1.0[/b], previously [url=https://www.redd
 [*] Allow easy customization of consumed items via plugin override.
 [*] Consume bottles to extract potions and poisons from creatures, supporting [url=https://www.nexusmods.com/skyrim/mods/33201]Hunterborn[/url].
 [*] Add bottle crafting and smelting recipes.
+[*] Optionally add bottles to leveled lists via script injection.
 [*] Provide an alternative esp plugin which doesn't require the DLCs.
 [/list]
