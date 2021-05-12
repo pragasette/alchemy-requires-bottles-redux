@@ -54,8 +54,11 @@ Event OnItemRemoved(Form item, Int count, ObjectReference itemRef, ObjectReferen
 	If newCount > poisonCount
 		PlayerRef.AddItem(_p7ARBR_EmptyBottle, 1)
 		poisonCount = newCount
-		Debug.Trace("[Alchemy Requires Bottles Redux] Trying to remove form from _p7ARBR_PoisonList: " + item)
-		_p7ARBR_PoisonList.RemoveAddedForm(item)
+
+		If PlayerRef.GetItemCount(item) == 0
+			Debug.Trace("[Alchemy Requires Bottles Redux] Trying to remove form from _p7ARBR_PoisonList: " + item)
+			_p7ARBR_PoisonList.RemoveAddedForm(item)
+		EndIf
 	EndIf
 EndEvent
 
