@@ -30,8 +30,12 @@ bottles.
 
 ## Updating
 
-It is safe to update from version **0.1.0**, previously
-[available on r/skyrimmods][#3].
+It is safe to update to a newer release in the middle of a game:
+
+- **0.1.0** → **1.0.1** ✔️ (previously [available on r/skyrimmods][#3])
+- **1.0.0** → **1.0.1** ✔️
+
+Also see [Semantic Versioning for End-User Game Mods].
 
 ## Alternatives
 
@@ -56,6 +60,7 @@ It is safe to update from version **0.1.0**, previously
 [USLEEP]: https://www.nexusmods.com/skyrim/mods/71214
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
+[Semantic Versioning for End-User Game Mods]: https://github.com/pragasette/game-mods-semver
 [Alchemy Requires Bottles]: https://www.nexusmods.com/skyrim/mods/52311
 [Bottles Required]: https://www.nexusmods.com/skyrim/mods/104680
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html

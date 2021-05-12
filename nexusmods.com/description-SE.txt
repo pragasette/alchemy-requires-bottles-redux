@@ -23,7 +23,13 @@
 [/list]
 
 [heading]Updating[/heading]
-It is safe to update from version [b]0.1.0[/b], previously [url=https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/]available on r/skyrimmods[/url].
+It is safe to update to a newer release in the middle of a game:
+&#8203;
+[list]
+[*] [b]0.1.0[/b] → [b]1.0.1[/b] ✔️ (previously [url=https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/]available on r/skyrimmods[/url])
+[*] [b]1.0.0[/b] → [b]1.0.1[/b] ✔️
+[/list]
+Also see [url=https://www.nexusmods.com/skyrim/mods/101821]Semantic Versioning for End-User Game Mods[/url].
 &#8203;
 
 [heading]Alternatives[/heading]

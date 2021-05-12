@@ -29,8 +29,12 @@ potion crafting consume empty bottles.
 
 ## Updating
 
-It is safe to update from version **0.1.0**, previously
-[available on r/skyrimmods][#3].
+It is safe to update to a newer release in the middle of a game:
+
+- **0.1.0** → **1.0.1** ✔️ (previously [available on r/skyrimmods][#3])
+- **1.0.0** → **1.0.1** ✔️
+
+Also see [Semantic Versioning for End-User Game Mods].
 
 ## Alternatives
 
@@ -51,6 +55,7 @@ It is safe to update from version **0.1.0**, previously
 [USSEP]: https://www.nexusmods.com/skyrimspecialedition/mods/266
 [Campfire]: https://www.nexusmods.com/skyrimspecialedition/mods/667
 [CACO]: https://www.nexusmods.com/skyrimspecialedition/mods/19924
+[Semantic Versioning for End-User Game Mods]: https://github.com/pragasette/game-mods-semver
 [Reality Alchemy]: https://www.nexusmods.com/skyrimspecialedition/mods/19269
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
