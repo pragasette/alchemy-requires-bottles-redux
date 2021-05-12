@@ -22,7 +22,7 @@ potion crafting consume empty bottles.
 ## Installation
 
 - Use your mod manager of choice, [Mod Organizer 2] is recommended.
-- Use [TES5Edit] to ensure changes applied to merchant chests are preserved, in
+- Use [SSEEdit] to ensure changes applied to merchant chests are preserved, in
   case another mod is editing the same records: see
   [xEdit Conflict Detection and Resolution][#1] and [Patching][#2] to know
   more.
