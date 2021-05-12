@@ -30,6 +30,7 @@ It is safe to update from version [b]0.1.0[/b], previously [url=https://www.redd
 [heading]Alternatives[/heading]
 [list]
 [*] [url=https://www.nexusmods.com/skyrim/mods/52311]Alchemy Requires Bottles[/url]
+[*] [url=https://www.nexusmods.com/skyrim/mods/104680]Bottles Required[/url]
 [/list]
 
 [heading]TODO[/heading]

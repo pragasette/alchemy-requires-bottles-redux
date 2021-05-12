@@ -35,6 +35,7 @@ It is safe to update from version **0.1.0**, previously
 ## Alternatives
 
 - [Alchemy Requires Bottles]
+- [Bottles Required]
 
 ## TODO
 
@@ -50,6 +51,7 @@ It is safe to update from version **0.1.0**, previously
 [Campfire]: https://www.nexusmods.com/skyrim/mods/64798
 [CACO]: https://www.nexusmods.com/skyrim/mods/69306
 [Alchemy Requires Bottles]: https://www.nexusmods.com/skyrim/mods/52311
+[Bottles Required]: https://www.nexusmods.com/skyrim/mods/104680
 [#1]: https://tes5edit.github.io/docs/5-conflict-detection-and-resolution.html
 [#2]: https://www.reddit.com/r/skyrimmods/wiki/patching
 [#3]: https://www.reddit.com/r/skyrimmods/comments/isgd8m/le_port_for_reality_alchemy_concotion_need_his/g58lbhg/
